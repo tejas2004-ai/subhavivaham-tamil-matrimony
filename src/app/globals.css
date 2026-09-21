@@ -32,8 +32,6 @@
 }
 
 /* ── Reset ──────────────────────────────────────────────────────── */
-/* Keep foundation rules in Tailwind's base layer so margin, sizing and
-   layout utilities retain their intended precedence. */
 @layer base {
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: smooth; }
@@ -109,8 +107,6 @@
 /* Section 6: Ivory */
 .surf-ivory { background: var(--ivory); }
 
-/* The page follows an editorial rhythm: each major subject has room to land,
-   while colour shifts read as deliberate chapters rather than stacked cards. */
 .site-section { position: relative; isolation: isolate; }
 .site-section::before {
   content: '';
@@ -142,7 +138,6 @@
 .border-parchment   { border: 1px solid var(--parchment-d); }
 .border-maroon      { border: 1px solid rgba(92,18,32,.2); }
 
-/* Gradient border frame (CSS trick) */
 .frame-brass {
   border: 1.5px solid transparent;
   background:
@@ -165,8 +160,6 @@
   box-shadow: 0 24px 48px rgba(92,18,32,.15), 0 4px 12px rgba(139,105,20,.12);
 }
 
-/* Profile cards are intentionally stable: matrimonial details should be easy to
-   read and never depend on a hover-only interaction. */
 .flip-card { height: 100%; }
 .flip-inner {
   position: relative; width: 100%; height: 100%;
@@ -259,8 +252,6 @@
 }
 
 /* ── Content safety ─────────────────────────────────────────────── */
-/* Content must remain visible even when an intersection observer is
-   delayed, unavailable, or restored from browser history. */
 .reveal, .reveal-l, .reveal-r {
   opacity: 1;
   transform: none;
