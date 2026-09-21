@@ -22,7 +22,7 @@ const B = {
     { lbl: 'Murappanadu Office', line: '1-56/1, Sub Register Off Street, Murappanadu, Tuticorin — 628 252' },
     { lbl: 'Vallanadu Office',   line: '3/58, Natarajar Sannathi Street, Vallanadu, Tuticorin — 628 252' },
   ],
-  certs: ['ISO 9001:2015', 'QRO Certified'],
+  certs: ['100% Verified Profiles', 'Family Privacy Assured'],
 }
 
 // ── Data ──────────────────────────────────────────────────────────
@@ -555,10 +555,10 @@ function Hero() {
           <div className="grid lg:grid-cols-[1.15fr_.85fr] gap-10 xl:gap-20 items-center">
             {/* ── Left: Copy ─────────────────────────────── */}
             <div className="text-center lg:text-left">
-              {/* ISO Badge pill */}
+              {/* Matchmaking Trust pill */}
               <div className="inline-flex items-center gap-2 bg-white/8 border border-[#B8870C]/35 rounded-full px-4 py-1.5 mb-6">
                 <span className="w-2 h-2 rounded-full bg-[#DEB84A] animate-ping"/>
-                <span className="f-baloo text-[#FAF4E6]/85 text-xs font-medium">ISO 9001:2015 & QRO Certified Matchmaking</span>
+                <span className="f-baloo text-[#FAF4E6]/85 text-xs font-medium">Trusted Traditional Tamil Matchmaking</span>
               </div>
 
               {/* Tamil script intro */}
@@ -1134,8 +1134,8 @@ function Contact() {
                 <Kolam className="absolute top-3 right-3 w-20 h-20 text-[#B8870C] opacity-14 pointer-events-none"/>
                 <BrandLogo size="sm" />
                 <div className="text-right">
-                  <div className="f-baloo text-[#DEB84A] text-xs font-bold uppercase tracking-wider">ISO 9001:2015</div>
-                  <div className="f-baloo text-[#FAF4E6]/45 text-[10px]">Certified Service</div>
+                  <div className="f-baloo text-[#DEB84A] text-xs font-bold uppercase tracking-wider">Trusted Matchmaking</div>
+                  <div className="f-baloo text-[#FAF4E6]/45 text-[10px]">Tuticorin & Tirunelveli</div>
                 </div>
               </div>
 
@@ -1289,7 +1289,7 @@ function Footer() {
           <div className="lg:col-span-5">
             <BrandLogo size="md" className="mb-5" />
             <p className="f-baloo text-[#FAF4E6]/40 text-sm leading-relaxed mb-4 max-w-sm">
-              Tuticorin's most trusted Tamil matrimony. Personally managed by {B.owner}. ISO 9001:2015 certified.
+              Tuticorin's most trusted Tamil matrimony. Personally managed by {B.owner}. Traditional & verified matchmaking.
             </p>
             <div className="flex gap-2 flex-wrap">
               {B.certs.map(c=><span key={c} className="f-baloo text-[10px] bg-white/5 text-[#FAF4E6]/45 border border-white/10 px-3 py-1 rounded-full">✓ {c}</span>)}
