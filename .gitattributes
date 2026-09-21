@@ -144,3 +144,8 @@
 *.stl                filter=lfs diff=lfs merge=lfs -text
 *.nc                 filter=lfs diff=lfs merge=lfs -text
 *.mat                filter=lfs diff=lfs merge=lfs -text
+
+# ---------------------------------------------------------------------------
+# Public Web Assets (Exclude from LFS for GitHub Pages static export)
+# ---------------------------------------------------------------------------
+public/**            -filter -diff -merge

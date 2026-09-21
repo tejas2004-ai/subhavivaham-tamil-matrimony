@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
+import { KNOT_LOGO_SRC } from './logoData'
 
 /* ══════════════════════════════════════════════════════════════════
    SUBHAVIVAHAM — Tamil Matrimony
@@ -426,7 +427,7 @@ function BrandLogo({ size = 'md', className = '' }: { size?: 'sm' | 'md' | 'lg';
       <div className="relative flex-shrink-0">
         <div className="absolute inset-0 bg-[#DEB84A]/15 blur-lg rounded-full transform scale-90 pointer-events-none" />
         <img
-          src={`${BASE_PATH}/knot-transparent.png`}
+          src={KNOT_LOGO_SRC}
           alt="Subhavivaham Sacred Knot"
           className={`relative w-auto object-contain drop-shadow-[0_4px_14px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105 ${
             isSm ? 'h-10 sm:h-11' : isLg ? 'h-14 sm:h-18' : 'h-11 sm:h-13 md:h-15'
