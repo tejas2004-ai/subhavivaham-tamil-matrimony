@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+Tamil:wght@400;600;700&display=swap');
+@import '@fontsource/noto-serif-tamil/tamil-400.css';
+@import '@fontsource/noto-serif-tamil/tamil-600.css';
+@import '@fontsource/noto-serif-tamil/tamil-700.css';
+@import 'tailwindcss';
+
+/* ══════════════════════════════════════════════════════════════════
+   CHETTINAD VINTAGE — Design System
+   Deep Maroon · Antique Brass · Peacock Teal · Aged Parchment
+══════════════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Palette ── */
+  --maroon:      #5A1B2A;
+  --maroon-mid:  #74243A;
+  --maroon-lit:  #963750;
+  --brass:       #8A651D;
+  --brass-warm:  #AA7D28;
+  --brass-pale:  #D9B866;
+  --brass-glow:  #F3E0A5;
+  --teal:        #155754;
+  --teal-mid:    #216F6A;
+  --teal-lit:    #3A9189;
+  --parchment:   #F5E8E1;
+  --parchment-d: #E5C8BC;
+  --ivory:       #FFF9F6;
+  --ink:         #24161A;
+  --ink-soft:    #432B31;
+  --muted:       #765961;
+  --muted-lit:   #9D8388;
+  --white:       #FFFCF6;
+}
+
+/* ── Reset ──────────────────────────────────────────────────────── */
+/* Keep foundation rules in Tailwind's base layer so margin, sizing and
+   layout utilities retain their intended precedence. */
+@layer base {
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 5.5rem; }
+  body {
+    background: var(--ivory);
+    color: var(--ink);
+    font-family: 'Manrope', system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+  img { display: block; max-width: 100%; }
+  button { cursor: pointer; border: none; background: none; }
+  a { text-decoration: none; }
+  select, input, textarea { font-family: inherit; }
+}
+
+:where(a, button, select, input, textarea):focus-visible {
+  outline: 3px solid var(--brass-pale);
+  outline-offset: 3px;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: var(--parchment); }
+::-webkit-scrollbar-thumb { background: var(--brass); border-radius: 99px; }
+
+/* ── Font helpers ───────────────────────────────────────────────── */
+.f-yatra  { font-family: 'DM Serif Display', Georgia, serif; letter-spacing: -.025em; }
+.f-baloo  { font-family: 'Manrope', system-ui, sans-serif; }
+.f-script { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; letter-spacing: -.035em; }
+.f-tamil  { font-family: 'Noto Serif Tamil', 'DejaVu Sans', serif; }
+
+/* ── Gradient text ──────────────────────────────────────────────── */
+.text-brass {
+  background: linear-gradient(135deg, #8B6914 0%, #DEB84A 50%, #8B6914 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text; background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: brassFlow 4s linear infinite;
+}
+@keyframes brassFlow { to { background-position: 200% center; } }
+
+/* ── Surface backgrounds ────────────────────────────────────────── */
+/* Section 1: Rich Maroon */
+.surf-maroon {
+  background:
+    radial-gradient(ellipse 60% 50% at 10% 50%, rgba(184,135,12,.18) 0%, transparent 100%),
+    radial-gradient(ellipse 60% 50% at 90% 50%, rgba(184,135,12,.10) 0%, transparent 100%),
+    var(--maroon);
+}
+/* Section 2: Peacock Teal */
+.surf-teal {
+  background:
+    radial-gradient(ellipse 50% 60% at 80% 30%, rgba(139,105,20,.2) 0%, transparent 100%),
+    var(--teal);
+}
+/* Section 3: Aged Parchment */
+.surf-parchment {
+  background:
+    radial-gradient(ellipse 45% 50% at 15% 20%, rgba(116,36,58,.09) 0%, transparent 100%),
+    radial-gradient(ellipse 35% 40% at 85% 80%, rgba(170,125,40,.06) 0%, transparent 100%),
+    var(--parchment);
+}
+/* Section 4: Deep Ink */
+.surf-ink {
+  background:
+    radial-gradient(ellipse 55% 55% at 20% 30%, rgba(92,18,32,.65) 0%, transparent 55%),
+    radial-gradient(ellipse 45% 55% at 80% 70%, rgba(13,74,72,.4) 0%, transparent 55%),
+    #120608;
+}
+/* Section 5: Warm White */
+.surf-white { background: var(--white); }
+/* Section 6: Ivory */
+.surf-ivory { background: var(--ivory); }
+
+/* The page follows an editorial rhythm: each major subject has room to land,
+   while colour shifts read as deliberate chapters rather than stacked cards. */
+.site-section { position: relative; isolation: isolate; }
+.site-section::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%; width: min(92vw, 76rem); height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(90deg, transparent, rgba(139,105,20,.26), transparent);
+  pointer-events: none;
+}
+.hero-section { isolation: isolate; }
+
+/* Silk weave texture (subtle) */
+.tex-silk {
+  background-image:
+    repeating-linear-gradient(45deg,  rgba(139,105,20,.028) 0, rgba(139,105,20,.028) 1px, transparent 0, transparent 50%),
+    repeating-linear-gradient(-45deg, rgba(139,105,20,.028) 0, rgba(139,105,20,.028) 1px, transparent 0, transparent 50%);
+  background-size: 20px 20px;
+}
+/* Kolam dot grid (subtle) */
+.tex-kolam {
+  background-image: radial-gradient(circle, rgba(139,105,20,.12) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+/* ── Borders ────────────────────────────────────────────────────── */
+.border-brass       { border: 1px solid rgba(184,135,12,.3); }
+.border-brass-md    { border: 1.5px solid rgba(184,135,12,.45); }
+.border-brass-vivid { border: 1.5px solid rgba(184,135,12,.75); }
+.border-parchment   { border: 1px solid var(--parchment-d); }
+.border-maroon      { border: 1px solid rgba(92,18,32,.2); }
+
+/* Gradient border frame (CSS trick) */
+.frame-brass {
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(var(--white), var(--white)) padding-box,
+    linear-gradient(135deg, #8B6914, #DEB84A, #8B6914) border-box;
+}
+.frame-parchment {
+  border: 1.5px solid transparent;
+  background:
+    linear-gradient(var(--ivory), var(--ivory)) padding-box,
+    linear-gradient(135deg, #8B6914, #DEB84A, #8B6914) border-box;
+}
+
+/* Card hover lift */
+.card-lift {
+  transition: transform .32s ease, box-shadow .32s ease;
+}
+.card-lift:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 24px 48px rgba(92,18,32,.15), 0 4px 12px rgba(139,105,20,.12);
+}
+
+/* Profile cards are intentionally stable: matrimonial details should be easy to
+   read and never depend on a hover-only interaction. */
+.flip-card { height: 100%; }
+.flip-inner {
+  position: relative; width: 100%; height: 100%;
+}
+.flip-front, .flip-back {
+  border-radius: .875rem; overflow: hidden;
+}
+.flip-front {
+  position: relative;
+  min-height: 100%;
+}
+.flip-back {
+  display: none;
+  border-radius: .875rem; overflow: hidden;
+}
+
+/* ── Buttons ────────────────────────────────────────────────────── */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  gap: .5rem; font-family: 'Manrope', sans-serif; font-weight: 700;
+  border: none; cursor: pointer; transition: all .28s ease;
+  white-space: nowrap; position: relative; overflow: hidden;
+}
+.btn::after {
+  content: ''; position: absolute; inset: 0;
+  opacity: 0; transition: opacity .28s;
+}
+.btn:hover::after { opacity: 1; }
+.btn > * { position: relative; z-index: 1; }
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--maroon), var(--maroon-mid));
+  color: var(--ivory);
+}
+.btn-primary::after { background: linear-gradient(135deg, var(--maroon-mid), var(--maroon-lit)); }
+.btn-primary:hover  { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(92,18,32,.4); }
+
+.btn-brass {
+  background: linear-gradient(135deg, var(--brass), var(--brass-warm));
+  color: var(--ink);
+}
+.btn-brass::after  { background: linear-gradient(135deg, var(--brass-warm), var(--brass-pale)); }
+.btn-brass:hover   { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(139,105,20,.4); }
+
+.btn-teal {
+  background: linear-gradient(135deg, var(--teal), var(--teal-mid));
+  color: var(--ivory);
+}
+.btn-teal:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(13,74,72,.4);
+  background: linear-gradient(135deg, var(--teal-mid), var(--teal-lit)); }
+
+.btn-ghost-brass {
+  background: transparent; color: var(--brass-warm);
+  border: 2px solid var(--brass-warm);
+}
+.btn-ghost-brass:hover { background: var(--brass-warm); color: var(--ink); transform: translateY(-2px); }
+
+.btn-ghost-ivory {
+  background: transparent; color: var(--ivory);
+  border: 1.5px solid rgba(250,244,230,.45);
+}
+.btn-ghost-ivory:hover { background: rgba(250,244,230,.12); border-color: var(--ivory); }
+
+/* ── Inputs ─────────────────────────────────────────────────────── */
+.field {
+  width: 100%;
+  border: 1.5px solid var(--parchment-d);
+  border-radius: .625rem;
+  padding: .7rem 1rem;
+  font-family: 'Manrope', sans-serif;
+  font-size: .875rem;
+  color: var(--ink);
+  background: var(--white);
+  outline: none;
+  transition: border-color .22s, box-shadow .22s;
+}
+.field:focus {
+  border-color: var(--maroon);
+  box-shadow: 0 0 0 3px rgba(92,18,32,.1);
+}
+.field::placeholder { color: var(--muted-lit); }
+
+/* ── Ornament divider ───────────────────────────────────────────── */
+.divider {
+  display: flex; align-items: center; gap: 12px;
+}
+.divider::before, .divider::after {
+  content: ''; flex: 1; height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--brass-warm) 30%, var(--brass-pale) 50%, var(--brass-warm) 70%, transparent);
+}
+
+/* ── Content safety ─────────────────────────────────────────────── */
+/* Content must remain visible even when an intersection observer is
+   delayed, unavailable, or restored from browser history. */
+.reveal, .reveal-l, .reveal-r {
+  opacity: 1;
+  transform: none;
+  transition: opacity .42s ease-out, transform .42s ease-out;
+}
+.d1 { transition-delay: .08s; } .d2 { transition-delay: .16s; }
+.d3 { transition-delay: .24s; } .d4 { transition-delay: .32s; }
+.d5 { transition-delay: .40s; } .d6 { transition-delay: .48s; }
+
+/* ── Animations ─────────────────────────────────────────────────── */
+@keyframes float {
+  0%,100% { transform: translateY(0) rotate(0deg); }
+  40%     { transform: translateY(-11px) rotate(2.5deg); }
+  70%     { transform: translateY(-4px) rotate(-1.5deg); }
+}
+@keyframes spinCW  { to { transform: rotate(360deg); } }
+@keyframes spinCCW { to { transform: rotate(-360deg); } }
+@keyframes brassPulse {
+  0%,100% { box-shadow: 0 0 10px 2px rgba(139,105,20,.4); }
+  50%     { box-shadow: 0 0 22px 5px rgba(184,135,12,.65); }
+}
+@keyframes pulseDot { 0%,100%{transform:scale(1);opacity:1;} 50%{transform:scale(1.5);opacity:.5;} }
+@keyframes ticker   { 0%{transform:translateX(0);} 100%{transform:translateX(-50%);} }
+@keyframes blink    { 0%,100%{border-color:transparent;} 50%{border-color:var(--brass-warm);} }
+@keyframes popIn    { 0%{opacity:0;transform:scale(.8) rotate(-3deg);} 70%{transform:scale(1.04) rotate(.5deg);} 100%{opacity:1;transform:scale(1) rotate(0);} }
+@keyframes ripple   { 0%{transform:scale(1);opacity:.6;} 100%{transform:scale(2.6);opacity:0;} }
+@keyframes petalFall {
+  0%  { opacity:0; transform:translate(0,-50px) rotate(0deg); }
+  8%  { opacity:.7; }
+  92% { opacity:.4; }
+  100%{ opacity:0; transform:translate(var(--tx, 0),105vh) rotate(var(--rot, 360deg)); }
+}
+@keyframes slideDown { from{opacity:0;transform:translateY(-14px);} to{opacity:1;transform:none;} }
+@keyframes stampIn   { 0%{opacity:0;transform:scale(1.5);} 70%{transform:scale(.96);} 100%{opacity:1;transform:scale(1);} }
+
+.anim-float    { animation: float 5s ease-in-out infinite; }
+.anim-float2   { animation: float 5s ease-in-out 2.2s infinite; }
+.anim-spin-cw  { animation: spinCW  18s linear infinite; }
+.anim-spin-ccw { animation: spinCCW 22s linear infinite; }
+.anim-brass    { animation: brassPulse 2.4s ease-in-out infinite; }
+.anim-dot      { animation: pulseDot 1.8s ease-in-out infinite; }
+.anim-down     { animation: slideDown .32s ease-out both; }
+.anim-pop      { animation: popIn .48s cubic-bezier(.36,.07,.19,.97) both; }
+.anim-stamp    { animation: stampIn .4s cubic-bezier(.36,.07,.19,.97) both; }
+
+/* Petals */
+.petal {
+  position: absolute; top: -50px; pointer-events: none;
+  animation: petalFall linear infinite; z-index: 0; user-select: none;
+}
+
+/* Ticker */
+.ticker-wrap { overflow: hidden; }
+.ticker-track { display: flex; width: max-content; animation: ticker 32s linear infinite; }
+
+/* WhatsApp fab */
+.wa-fab {
+  position: fixed; bottom: 24px; right: 24px; z-index: 100;
+  width: 56px; height: 56px; border-radius: 50%;
+  background: #25D366;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,.5);
+  transition: transform .24s ease, box-shadow .24s ease;
+}
+.wa-fab::after {
+  content: ''; position: absolute; inset: -5px; border-radius: 50%;
+  border: 2px solid rgba(37,211,102,.35);
+  animation: ripple 2.2s ease-out infinite;
+}
+.wa-fab:hover { transform: scale(1.1); box-shadow: 0 8px 30px rgba(37,211,102,.6); }
+
+/* Rasi cell */
+.rasi-cell { transition: all .28s ease; cursor: pointer; }
+.rasi-cell:hover, .rasi-cell.active {
+  transform: scale(1.07); z-index: 2;
+  box-shadow: 0 8px 24px rgba(92,18,32,.45);
+}
+
+/* Profile card height */
+.card-h { height: auto; }
+
+/* Tag pill */
+.tag {
+  display: inline-flex; align-items: center; gap: .3rem;
+  font-family: 'Manrope', sans-serif; font-weight: 600;
+  font-size: .65rem; text-transform: uppercase; letter-spacing: .05em;
+  padding: .2rem .6rem; border-radius: 99px;
+}
+
+/* ── Navbar underline indicator ─────────────────────────────────── */
+.nav-link {
+  position: relative; font-family: 'Manrope', sans-serif;
+  font-size: .875rem; font-weight: 500; color: rgba(250,244,230,.8);
+  transition: color .22s;
+}
+.nav-link::after {
+  content: ''; position: absolute; bottom: -3px; left: 0; right: 100%;
+  height: 2px; background: var(--brass-pale);
+  transition: right .28s ease;
+}
+.nav-link:hover { color: var(--brass-pale); }
+.nav-link:hover::after { right: 0; }
+
+/* ── Hero decorative arch ───────────────────────────────────────── */
+.hero-arch {
+  position: absolute; left: 0; right: 0; pointer-events: none;
+}
+
+@media (max-width: 1023px) {
+  .hero-section { min-height: auto; }
+  .hero-section > .relative { padding-top: 7rem; padding-bottom: 6.5rem; }
+  .site-section { scroll-margin-top: 4.5rem; }
+}
+
+@media (max-width: 639px) {
+  .site-section::before { width: calc(100% - 2.5rem); }
+  .flip-card:hover .flip-inner { transform: none; }
+  .card-h { height: 390px; }
+  .ticker-track { animation-duration: 40s; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

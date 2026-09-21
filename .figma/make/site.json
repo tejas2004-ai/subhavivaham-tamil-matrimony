@@ -1,0 +1,10 @@
+{
+  "description": "Connect Tamil singles through a dynamic matrimony platform featuring traditional matchmaking tailored to cultural preferences for meaningful relationships.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
