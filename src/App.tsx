@@ -35,7 +35,7 @@ const BRIDES = [
 ]
 const GROOMS = [
   { id:7,  name:'Karthik Raghunathan', age:29, caste:'Iyer',    job:'Govt. Engineer',       loc:'Tuticorin',   edu:'B.Tech – Coimbatore Inst. of Tech.',  h:"5'10\"",rasi:'Mesham',    star:'Bharani',      photo:'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=480&fit=crop&crop=face', ok:true,  vip:true  },
-  { id:8,  name:'Vijay Annamalai',     age:31, caste:'Nadar',   job:'Doctor — MBBS',        loc:'Tirunelveli', edu:'MBBS – Tirunelveli Medical College',  h:"5'9\"", rasi:'Kadagam',   star:'Poosam',       photo:'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=480&fit=crop&crop=face', ok:true,  vip:true  },
+  { id:8,  name:'Vijay Annamalai',     age:31, caste:'Nadar',   job:'Doctor — MBBS',        loc:'Tirunelveli', edu:'MBBS – Tirunelveli Medical College',  h:"5'9\"", rasi:'Katakam',   star:'Poosam',       photo:'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=480&fit=crop&crop=face', ok:true,  vip:true  },
   { id:9,  name:'Aravind Murugesan',   age:28, caste:'Thevar',  job:'Software Engineer',    loc:'Chennai',     edu:'B.Tech – Anna University',           h:"5'8\"", rasi:'Thulam',    star:'Swathi',       photo:'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=480&fit=crop&crop=face', ok:true,  vip:false },
   { id:10, name:'Senthil Durai',       age:30, caste:'Mudaliar',job:'Advocate – High Court',loc:'Tuticorin',   edu:'LLB – Madurai Kamaraj University',   h:"5'7\"", rasi:'Meenam',    star:'Poorattathi',  photo:'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=480&fit=crop&crop=face', ok:false, vip:false },
   { id:11, name:'Murugan Pillai',      age:27, caste:'Pillai',  job:'Marine Engineer',      loc:'Tuticorin',   edu:'B.Tech Marine – Noorul Islam Univ.',  h:"5'11\"",rasi:'Rishabam',  star:'Rohini',       photo:'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&h=480&fit=crop&crop=face', ok:true,  vip:true  },
@@ -43,18 +43,18 @@ const GROOMS = [
 ]
 
 const RASIS = [
-  { name:'Mesham',    tamil:'மேஷம்',      sym:'♈', lord:'Chevvai' },
-  { name:'Rishabam',  tamil:'ரிஷபம்',    sym:'♉', lord:'Sukran'  },
-  { name:'Mithunam',  tamil:'மிதுனம்',   sym:'♊', lord:'Budhan'  },
-  { name:'Katakam',   tamil:'கடகம்',     sym:'♋', lord:'Chandran'},
-  { name:'Simmam',    tamil:'சிம்மம்',   sym:'♌', lord:'Sooryan' },
-  { name:'Kanni',     tamil:'கன்னி',     sym:'♍', lord:'Budhan'  },
-  { name:'Thulam',    tamil:'துலாம்',    sym:'♎', lord:'Sukran'  },
-  { name:'Viruchigam',tamil:'விருச்சிகம்',sym:'♏', lord:'Chevvai' },
-  { name:'Dhanusu',   tamil:'தனுசு',     sym:'♐', lord:'Guru'    },
-  { name:'Makaram',   tamil:'மகரம்',     sym:'♑', lord:'Sani'    },
-  { name:'Kumbam',    tamil:'கும்பம்',   sym:'♒', lord:'Sani'    },
-  { name:'Meenam',    tamil:'மீனம்',     sym:'♓', lord:'Guru'    },
+  { name:'Mesham',    tamil:'மேஷம்',      lord:'Chevvai' },
+  { name:'Rishabam',  tamil:'ரிஷபம்',    lord:'Sukran'  },
+  { name:'Mithunam',  tamil:'மிதுனம்',   lord:'Budhan'  },
+  { name:'Katakam',   tamil:'கடகம்',     lord:'Chandran'},
+  { name:'Simmam',    tamil:'சிம்மம்',   lord:'Sooryan' },
+  { name:'Kanni',     tamil:'கன்னி',     lord:'Budhan'  },
+  { name:'Thulam',    tamil:'துலாம்',    lord:'Sukran'  },
+  { name:'Viruchigam',tamil:'விருச்சிகம்',lord:'Chevvai' },
+  { name:'Dhanusu',   tamil:'தனுசு',     lord:'Guru'    },
+  { name:'Makaram',   tamil:'மகரம்',     lord:'Sani'    },
+  { name:'Kumbam',    tamil:'கும்பம்',   lord:'Sani'    },
+  { name:'Meenam',    tamil:'மீனம்',     lord:'Guru'    },
 ]
 
 const TESTI = [
@@ -64,22 +64,22 @@ const TESTI = [
 ]
 
 const STATS = [
-  { n:25000, suf:'+', lbl:'Registered Profiles', icon:'👥' },
-  { n:8500,  suf:'+', lbl:'Marriages Fixed',      icon:'💍' },
-  { n:20,    suf:'+', lbl:'Tamil Communities',    icon:'🏛️' },
-  { n:15,    suf:'+', lbl:'Years of Trust',       icon:'⭐' },
+  { n:25000, suf:'+', lbl:'Registered Profiles', icon:'users' },
+  { n:8500,  suf:'+', lbl:'Marriages Fixed',      icon:'rings' },
+  { n:20,    suf:'+', lbl:'Tamil Communities',    icon:'temple' },
+  { n:15,    suf:'+', lbl:'Years of Trust',       icon:'trust' },
 ]
 
 const COMMUNITIES = ['Iyer','Iyengar','Mudaliar','Pillai','Nadar','Vellalar','Thevar','Gounder','Naicker','Yadavar','Chettiar','Maravar','Agamudayar','Konar','Asari','Kusavar']
 
 const TICKER = [
-  '🎊 Lakshmi & Rajesh — Successfully Married!',
-  '💍 Saranya & Murugan — Now a Happy Couple!',
-  '🌺 24 New Profiles Added Today',
-  '✅ Nithya & Sathish — Jathagam Matched!',
-  '📍 New Members from Murappanadu & Vallanadu',
-  '🎉 18 New Successful Matches This Month!',
-  '⭐ 500+ ISO-Verified Profiles Available',
+  'Lakshmi & Rajesh — Successfully Married!',
+  'Saranya & Murugan — Now a Happy Couple!',
+  '24 New Profiles Added Today',
+  'Nithya & Sathish — Jathagam Matched!',
+  'New Members from Murappanadu & Vallanadu',
+  '18 New Successful Matches This Month!',
+  '500+ ISO-Verified Profiles Available',
 ]
 
 // ── Hooks ─────────────────────────────────────────────────────────
@@ -131,7 +131,7 @@ function useTyper(words: string[], spd = 75, pause = 2600) {
   return txt
 }
 
-// ── SVG Decorations ───────────────────────────────────────────────
+// ── SVG Decorations & Icons ───────────────────────────────────────
 
 function Kolam({ className, style }: { className?: string; style?: React.CSSProperties }) {
   return (
@@ -168,10 +168,12 @@ function Arch({ className }: { className?: string }) {
   )
 }
 
-/* Floating petals */
+
+
+/* Floating petals using vector floral paths instead of emojis */
 function Petals() {
   const list = Array.from({length:10},(_,i)=>({
-    id:i, e:['🌸','🌺','🪷','✿'][i%4],
+    id:i,
     left:`${(i*10.3)%98}%`, sz:`${.85+(i%3)*.35}rem`,
     dur:`${9+(i%5)*2.8}s`, dl:`${(i*1.4)%10}s`,
     tx:`${-35+(i%5)*18}px`, rot:`${-150+i*28}deg`,
@@ -179,9 +181,214 @@ function Petals() {
   return <>{list.map(p=>(
     <span key={p.id} className="petal"
       style={{left:p.left,fontSize:p.sz,animationDuration:p.dur,animationDelay:p.dl,'--tx':p.tx,'--rot':p.rot} as React.CSSProperties}>
-      {p.e}
+      <svg viewBox="0 0 24 24" fill="currentColor" className="w-4 h-4 text-[#DEB84A]/35 inline-block">
+        <path d="M12 2C12 2 14.5 7 17 9.5C19.5 12 22 12 22 12C22 12 19.5 14.5 17 17C14.5 19.5 12 22 12 22C12 22 9.5 19.5 7 17C4.5 14.5 2 12 2 12C2 12 4.5 9.5 7 9.5C9.5 7 12 2 12 2Z" opacity="0.6"/>
+      </svg>
     </span>
   ))}</>
+}
+
+// ── Clean SVG Icons (Replacing Emojis) ────────────────────────────
+
+function SearchIcon({ className = 'w-4 h-4' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+  )
+}
+
+function MapPinIcon({ className = 'w-4 h-4' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+  )
+}
+
+function BriefcaseIcon({ className = 'w-4 h-4' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    </svg>
+  )
+}
+
+function MoonStarIcon({ className = 'w-4 h-4' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+    </svg>
+  )
+}
+
+function StarIcon({ className = 'w-4 h-4' }: { className?: string }) {
+  return (
+    <svg className={className} fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+    </svg>
+  )
+}
+
+function UsersIcon({ className = 'w-8 h-8' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+    </svg>
+  )
+}
+
+function RingsIcon({ className = 'w-8 h-8' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <circle cx="9" cy="13" r="5" strokeWidth={1.8} />
+      <circle cx="15" cy="13" r="5" strokeWidth={1.8} />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.8} d="M9 8l1.5-2h3L15 8" />
+    </svg>
+  )
+}
+
+function TempleIcon({ className = 'w-8 h-8' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M12 3v3m0 0L4 9v2h16V9l-8-3zM5 11v8m4-8v8m6-8v8m4-8v8M3 19h18v2H3v-2z" />
+    </svg>
+  )
+}
+
+function TrustAwardIcon({ className = 'w-8 h-8' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.75} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+    </svg>
+  )
+}
+
+function PhoneIcon({ className = 'w-5 h-5' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+    </svg>
+  )
+}
+
+function DocumentIcon({ className = 'w-5 h-5' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
+  )
+}
+
+function GlobeIcon({ className = 'w-5 h-5' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="9" strokeWidth={2} />
+      <path strokeLinecap="round" strokeWidth={2} d="M3.6 9h16.8M3.6 15h16.8" />
+      <path strokeLinecap="round" strokeWidth={2} d="M12 3a14.5 14.5 0 000 18 14.5 14.5 0 000-18z" />
+    </svg>
+  )
+}
+
+function GstIcon({ className = 'w-5 h-5' }: { className?: string }) {
+  return (
+    <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+    </svg>
+  )
+}
+
+function HeartIcon({ className = 'w-4 h-4', fill = false }: { className?: string; fill?: boolean }) {
+  return (
+    <svg className={className} fill={fill ? 'currentColor' : 'none'} stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+    </svg>
+  )
+}
+
+function ZodiacIcon({ sign, className = 'w-6 h-6' }: { sign: string; className?: string }) {
+  switch (sign) {
+    case 'Mesham': // Aries
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 19c0-5 3-9 8-9s8 4 8 9M12 10V21M4 10a4 4 0 017-3M20 10a4 4 0 00-7-3" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      )
+    case 'Rishabam': // Taurus
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <circle cx="12" cy="14" r="6" strokeWidth="2"/>
+          <path d="M6 5c2 4 4 4 6 4s4 0 6-4" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      )
+    case 'Mithunam': // Gemini
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M6 4c4 2 8 2 12 0M6 20c4-2 8-2 12 0M9 4.5v15M15 4.5v15" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      )
+    case 'Katakam': // Cancer
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <circle cx="8" cy="9" r="3.5" strokeWidth="2"/>
+          <path d="M11.5 9c3 0 5.5-2 6.5-5" strokeWidth="2" strokeLinecap="round"/>
+          <circle cx="16" cy="15" r="3.5" strokeWidth="2"/>
+          <path d="M12.5 15c-3 0-5.5 2-6.5 5" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      )
+    case 'Simmam': // Leo
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <circle cx="8" cy="14" r="3" strokeWidth="2"/>
+          <path d="M10 12c1-6 7-6 7 0 0 5-3 8-7 8" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      )
+    case 'Kanni': // Virgo
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 8v10M4 12c1.5-3 4.5-3 6 0v6M10 12c1.5-3 4.5-3 6 0v7c0 2 2 3 3.5 1M17 18l4-4" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      )
+    case 'Thulam': // Libra
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 19h16M4 14h4c1-3 4-3 5 0h7M10.5 11a2.5 2.5 0 013 0" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      )
+    case 'Viruchigam': // Scorpio
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 8v10M4 12c1.5-3 4.5-3 6 0v6M10 12c1.5-3 4.5-3 6 0v6l4-2m0 0l-1.5-3m1.5 3l-3-1" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      )
+    case 'Dhanusu': // Sagittarius
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M6 18L18 6M12 6h6v6M8 12l4 4" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      )
+    case 'Makaram': // Capricorn
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M5 8l4 10 3-7c2 0 4 2 4 4.5s-1.5 4.5-3.5 4.5-3-1.5-2-3.5" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      )
+    case 'Kumbam': // Aquarius
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M4 9l3-3 3 3 3-3 3 3 4-3M4 17l3-3 3 3 3-3 3 3 4-3" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      )
+    case 'Meenam': // Pisces
+      return (
+        <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M6 4c3 4 3 12 0 16M18 4c-3 4-3 12 0 16M4 12h16" strokeWidth="2" strokeLinecap="round"/>
+        </svg>
+      )
+    default:
+      return null
+  }
 }
 
 // ── Shared Section Head ───────────────────────────────────────────
@@ -203,6 +410,59 @@ function Head({title,sub,tamil,light=false}:HeadProps) {
   )
 }
 
+// ── Brand Logo Component (Clean, Sharp, No White Box) ──────────────
+
+function BrandLogo({ size = 'md', className = '' }: { size?: 'sm' | 'md' | 'lg'; className?: string }) {
+  const isSm = size === 'sm'
+  const isLg = size === 'lg'
+
+  return (
+    <div className={`flex items-center gap-3 sm:gap-4 select-none ${className}`}>
+      {/* Sacred Knot Emblem with soft warm aura */}
+      <div className="relative flex-shrink-0">
+        <div className="absolute inset-0 bg-[#DEB84A]/15 blur-lg rounded-full transform scale-90 pointer-events-none" />
+        <img
+          src="/knot-transparent.png"
+          alt="Subhavivaham Sacred Knot"
+          className={`relative w-auto object-contain drop-shadow-[0_4px_14px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105 ${
+            isSm ? 'h-10 sm:h-11' : isLg ? 'h-14 sm:h-18' : 'h-11 sm:h-13 md:h-15'
+          }`}
+        />
+      </div>
+
+      {/* Brand Typography - 100% Razor Sharp Vector & Web Fonts */}
+      <div className="flex flex-col justify-center leading-tight">
+        <div className="flex items-baseline drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
+          <span
+            className={`f-brush font-bold bg-gradient-to-r from-[#FFF5D6] via-[#E5B842] to-[#B8870C] bg-clip-text text-transparent ${
+              isSm ? 'text-2xl sm:text-3xl' : isLg ? 'text-3xl sm:text-4xl md:text-5xl' : 'text-3xl sm:text-4xl md:text-[2.65rem]'
+            }`}
+          >
+            Subha
+          </span>
+          <span
+            className={`f-brush font-bold bg-gradient-to-r from-[#86EFAC] via-[#10B981] to-[#047857] bg-clip-text text-transparent ml-1.5 ${
+              isSm ? 'text-2xl sm:text-3xl' : isLg ? 'text-3xl sm:text-4xl md:text-5xl' : 'text-3xl sm:text-4xl md:text-[2.65rem]'
+            }`}
+          >
+            vivaham
+          </span>
+        </div>
+
+        <div className="flex items-center gap-2 mt-0.5">
+          <span className="f-tamil text-[#E5B842] text-[11px] sm:text-xs font-semibold tracking-wide">
+            சுபவிவாஹம்
+          </span>
+          <span className="w-1 h-1 rounded-full bg-[#E5B842]/60" />
+          <span className="f-baloo text-[#FAF4E6]/80 text-[9px] sm:text-[10px] uppercase font-bold tracking-[.22em]">
+            Tamil Matrimony
+          </span>
+        </div>
+      </div>
+    </div>
+  )
+}
+
 // ── Navbar ────────────────────────────────────────────────────────
 
 function Navbar() {
@@ -218,19 +478,10 @@ function Navbar() {
     <nav className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${sc?'shadow-2xl':'bg-transparent'}`}
       style={sc?{background:'#5C1220'}:{backdropFilter:'blur(6px)'}}>
       <div className="max-w-7xl mx-auto px-5 sm:px-8">
-        <div className="flex items-center justify-between h-[64px] sm:h-[72px]">
+        <div className="flex items-center justify-between h-[84px] sm:h-[96px]">
           {/* Logo */}
-          <a href="#" className="flex items-center gap-2.5 group">
-            <div className="relative w-9 h-9 flex-shrink-0">
-              <Kolam className="absolute inset-0 text-[#B8870C] anim-spin-cw"/>
-              <div className="absolute inset-0 flex items-center justify-center">
-                <span className="f-tamil text-[#FAF4E6] text-[11px] font-bold">சு</span>
-              </div>
-            </div>
-            <div className="leading-none">
-              <div className="f-script text-[#FAF4E6] text-xl sm:text-[1.35rem] group-hover:text-[#DEB84A] transition-colors">{B.name}</div>
-              <div className="f-baloo text-[#FAF4E6]/45 text-[9px] tracking-[.12em] uppercase">Tamil Matrimony</div>
-            </div>
+          <a href="#" className="flex items-center group py-1">
+            <BrandLogo size="md" />
           </a>
 
           {/* Desktop links */}
@@ -288,7 +539,7 @@ function Hero() {
       {/* Left vertical gold bar accent */}
       <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-gradient-to-b from-transparent via-[#B8870C] to-transparent opacity-50"/>
 
-      <div className="relative z-10 pt-20 pb-14">
+      <div className="relative z-10 pt-28 sm:pt-32 pb-14">
         <div className="max-w-7xl mx-auto px-5 sm:px-8">
 
           <div className="flex items-center gap-3 mb-10 sm:mb-12">
@@ -299,34 +550,40 @@ function Hero() {
           <div className="grid lg:grid-cols-[1.15fr_.85fr] gap-10 xl:gap-20 items-center">
             {/* ── Left: Copy ─────────────────────────────── */}
             <div className="text-center lg:text-left">
-              {/* Live badge */}
-              <div className="inline-flex items-center gap-2 bg-[#1E0E12]/40 border border-[#B8870C]/30 rounded-full px-4 py-1.5 mb-7 backdrop-blur-sm">
-                <span className="anim-dot w-2 h-2 bg-[#DEB84A] rounded-full inline-block"/>
-                <span className="f-baloo text-[#FAF4E6]/80 text-xs">Personal introductions · Verified Tamil families</span>
+              {/* ISO Badge pill */}
+              <div className="inline-flex items-center gap-2 bg-white/8 border border-[#B8870C]/35 rounded-full px-4 py-1.5 mb-6">
+                <span className="w-2 h-2 rounded-full bg-[#DEB84A] animate-ping"/>
+                <span className="f-baloo text-[#FAF4E6]/85 text-xs font-medium">ISO 9001:2015 & QRO Certified Matchmaking</span>
               </div>
 
-              {/* Headline */}
-              <h1 className="f-yatra text-[2.8rem] sm:text-6xl lg:text-[4.2rem] text-[#FAF4E6] leading-[1.02] mb-5 max-w-xl">
-                A thoughtful beginning<br/>for your <span className="text-brass">family.</span>
+              {/* Tamil script intro */}
+              <p className="f-tamil text-[#DEB84A] text-lg sm:text-xl font-normal mb-2 tracking-wide">
+                சுபவிவாஹம் தமிழ் மேட்ரிமோனி
+              </p>
+
+              {/* Main title */}
+              <h1 className="f-yatra text-4xl sm:text-5xl xl:text-6xl text-[#FAF4E6] leading-[1.12] mb-6">
+                Personalized Matrimony for Traditional Tamil Families
               </h1>
 
-              {/* Tamil subtitle */}
-              <p className="f-tamil text-[#DEB84A]/90 text-base mb-4">
-                உங்கள் வாழ்க்கைத் துணையை நம்பிக்கையுடன் கண்டறியுங்கள்
+              <p className="f-baloo text-[#FAF4E6]/70 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 leading-relaxed mb-8">
+                Based in Murappanadu & Vallanadu, Tuticorin. Trusted horoscope matching, verified profiles, and complete family privacy guided by {B.owner}.
               </p>
 
-              <p className="f-baloo text-[#FAF4E6]/70 text-sm sm:text-[.9375rem] leading-relaxed mb-9 max-w-[520px] mx-auto lg:mx-0">
-                A personal matrimony service led by <span className="text-[#DEB84A] font-semibold">{B.owner}</span>. We bring families together with care, discretion and complete horoscope guidance.
-              </p>
-
-              {/* Stat grid */}
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-2.5 mb-9 max-w-[640px]">
-                {STATS.map(s=>(
-                  <div key={s.lbl} className="text-left bg-[#1E0E12]/35 border border-[#B8870C]/20 rounded-lg p-3 hover:bg-[#1E0E12]/55 hover:border-[#B8870C]/40 transition-all">
-                    <div className="f-yatra text-[#DEB84A] text-2xl leading-none">{s.n.toLocaleString()}{s.suf}</div>
-                    <div className="f-baloo text-[#FAF4E6]/50 text-[10px] mt-1.5 leading-tight">{s.lbl}</div>
-                  </div>
-                ))}
+              {/* Trust stats mini */}
+              <div className="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0 mb-9 pt-4 border-t border-white/10">
+                <div>
+                  <div className="f-yatra text-2xl sm:text-3xl text-[#DEB84A]">25,000+</div>
+                  <div className="f-baloo text-[#FAF4E6]/50 text-xs">Profiles</div>
+                </div>
+                <div>
+                  <div className="f-yatra text-2xl sm:text-3xl text-[#DEB84A]">8,500+</div>
+                  <div className="f-baloo text-[#FAF4E6]/50 text-xs">Marriages</div>
+                </div>
+                <div>
+                  <div className="f-yatra text-2xl sm:text-3xl text-[#DEB84A]">15+ Yrs</div>
+                  <div className="f-baloo text-[#FAF4E6]/50 text-xs">Tuticorin Trust</div>
+                </div>
               </div>
 
               {/* CTAs */}
@@ -361,7 +618,7 @@ function Hero() {
                     {(['bride','groom'] as const).map(g=>(
                       <button key={g} onClick={()=>setGen(g)}
                         className={`flex-1 py-2.5 rounded-lg f-baloo font-bold text-sm transition-all ${gen===g?'bg-[#5C1220] text-[#FAF4E6] shadow-md':'text-[#7A5A60] hover:text-[#5C1220]'}`}>
-                        {g==='bride'?'🌸 Bride':'🤵 Groom'}
+                        {g==='bride' ? 'Bride' : 'Groom'}
                       </button>
                     ))}
                   </div>
@@ -385,8 +642,9 @@ function Hero() {
                         <select className="field">{o.map(v=><option key={v}>{v}</option>)}</select>
                       </div>
                     ))}
-                    <a href="#browse" className="btn btn-primary w-full py-3 rounded-xl text-sm shadow-md">
-                      <span>🔍 Search {gen==='bride'?'Brides':'Grooms'}</span>
+                    <a href="#browse" className="btn btn-primary w-full py-3 rounded-xl text-sm shadow-md flex items-center justify-center gap-2">
+                      <SearchIcon className="w-4 h-4 text-current" />
+                      <span>Search {gen==='bride'?'Brides':'Grooms'}</span>
                     </a>
                   </div>
                 </div>
@@ -441,6 +699,16 @@ function Stats() {
   const n3 = useCounter(STATS[3].n, go)
   const ns = [n0, n1, n2, n3]
 
+  const renderStatIcon = (type: string) => {
+    switch(type) {
+      case 'users':  return <UsersIcon className="w-9 h-9 text-[#8B6914] mx-auto" />
+      case 'rings':  return <RingsIcon className="w-9 h-9 text-[#8B6914] mx-auto" />
+      case 'temple': return <TempleIcon className="w-9 h-9 text-[#8B6914] mx-auto" />
+      case 'trust':  return <TrustAwardIcon className="w-9 h-9 text-[#8B6914] mx-auto" />
+      default:       return null
+    }
+  }
+
   return (
     <section ref={ref} className="site-section surf-parchment tex-silk py-16 sm:py-20 relative overflow-hidden">
       <Kolam className="absolute -right-14 -top-14 w-52 h-52 text-[#8B6914] opacity-10 anim-spin-cw pointer-events-none"/>
@@ -449,7 +717,9 @@ function Stats() {
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-8">
           {STATS.map((s,i)=>(
             <div key={s.lbl} className={`text-center reveal d${i+1}`}>
-              <div className="text-4xl mb-3 anim-float" style={{animationDelay:`${i*.6}s`}}>{s.icon}</div>
+              <div className="mb-3 anim-float flex items-center justify-center h-10" style={{animationDelay:`${i*.6}s`}}>
+                {renderStatIcon(s.icon)}
+              </div>
               <div className="f-yatra text-[#5C1220] text-3xl sm:text-5xl leading-none">
                 {go?ns[i].toLocaleString():'0'}{s.suf}
               </div>
@@ -496,9 +766,14 @@ function ProfileCard({p}:{p:P}) {
           {/* Details */}
           <div className="p-4 flex-1">
             <div className="grid grid-cols-2 gap-2 mb-3">
-              {[['📍',p.loc],['💼',p.job],['🪐',p.rasi],['⭐',p.star]].map(([ic,v])=>(
+              {[
+                { ic: <MapPinIcon className="w-3.5 h-3.5 text-[#8B6914] flex-shrink-0" />, v: p.loc },
+                { ic: <BriefcaseIcon className="w-3.5 h-3.5 text-[#8B6914] flex-shrink-0" />, v: p.job },
+                { ic: <MoonStarIcon className="w-3.5 h-3.5 text-[#8B6914] flex-shrink-0" />, v: p.rasi },
+                { ic: <StarIcon className="w-3.5 h-3.5 text-[#8B6914] flex-shrink-0" />, v: p.star }
+              ].map(({ic, v})=>(
                 <div key={v as string} className="bg-[#F4E8C8] rounded-lg p-2 flex items-center gap-1.5 min-w-0">
-                  <span className="text-sm flex-shrink-0">{ic}</span>
+                  {ic}
                   <span className="f-baloo text-[#1E0E12] text-[11px] font-medium truncate">{v}</span>
                 </div>
               ))}
@@ -506,8 +781,9 @@ function ProfileCard({p}:{p:P}) {
 
             <div className="flex gap-2">
               <button onClick={()=>setLiked(!liked)}
-                className={`w-10 h-9 flex-shrink-0 rounded-lg border transition-all text-base ${liked?'bg-[#5C1220] border-[#5C1220] text-white':'border-[#E6D4A8] text-[#B8870C] hover:border-[#B8870C]'}`}>
-                {liked?'♥':'♡'}
+                className={`w-10 h-9 flex-shrink-0 rounded-lg border transition-all flex items-center justify-center ${liked?'bg-[#5C1220] border-[#5C1220] text-white':'border-[#E6D4A8] text-[#B8870C] hover:border-[#B8870C]'}`}
+                aria-label={liked ? 'Unlike' : 'Like'}>
+                <HeartIcon className="w-4 h-4" fill={liked} />
               </button>
               <a href="#contact" className="btn btn-primary flex-1 py-2 rounded-lg text-xs">
                 <span>Express Interest</span>
@@ -537,7 +813,9 @@ function ProfileCard({p}:{p:P}) {
             </div>
           </div>
           <div className="flex gap-2 w-full">
-            <a href="#contact" className="flex-1 bg-[#DEB84A] text-[#1E0E12] f-baloo font-bold py-2.5 rounded-xl text-xs hover:bg-[#F0DC9A] transition-colors text-center">♥ Interest</a>
+            <a href="#contact" className="flex-1 bg-[#DEB84A] text-[#1E0E12] f-baloo font-bold py-2.5 rounded-xl text-xs hover:bg-[#F0DC9A] transition-colors text-center flex items-center justify-center gap-1.5">
+              <HeartIcon className="w-3.5 h-3.5" fill={true} /> Interest
+            </a>
             <a href="#contact" className="flex-1 bg-white/12 text-[#FAF4E6] f-baloo font-bold py-2.5 rounded-xl text-xs hover:bg-white/22 transition-colors border border-white/20 text-center">Full Profile</a>
           </div>
         </div>
@@ -568,7 +846,7 @@ function Browse() {
             {(['bride','groom'] as const).map(t=>(
               <button key={t} onClick={()=>setTab(t)}
                 className={`px-9 py-2.5 rounded-xl f-baloo font-bold text-sm transition-all ${tab===t?'bg-[#5C1220] text-[#FAF4E6] shadow-lg':'text-[#7A5A60] hover:text-[#5C1220]'}`}>
-                {t==='bride'?'🌸 Brides':'🤵 Grooms'}
+                {t==='bride' ? 'Brides' : 'Grooms'}
               </button>
             ))}
           </div>
@@ -629,7 +907,9 @@ function Jathagam() {
             <button key={rasi.name} onClick={()=>setSel(sel===i?null:i)}
               className={`rasi-cell rounded-xl p-3 sm:p-4 text-center reveal d${(i%6)+1} ${sel===i?'bg-[#5C1220] border-[#B8870C]':'border border-white/10 hover:border-[#B8870C]/50'}`}
               style={sel===i?{border:'1.5px solid rgba(184,135,12,.7)'}:{}}>
-              <div className="text-2xl sm:text-3xl mb-1">{rasi.sym}</div>
+              <div className="flex justify-center mb-1 text-[#DEB84A]">
+                <ZodiacIcon sign={rasi.name} className="w-7 h-7 sm:w-8 sm:h-8" />
+              </div>
               <div className={`f-yatra text-sm leading-tight ${sel===i?'text-[#FAF4E6]':'text-[#FAF4E6]/85'}`}>{rasi.name}</div>
               <div className={`f-tamil text-[10px] mt-0.5 ${sel===i?'text-[#DEB84A]/80':'text-[#FAF4E6]/30'}`}>{rasi.tamil}</div>
             </button>
@@ -640,7 +920,9 @@ function Jathagam() {
         {r && (
           <div className="max-w-md mx-auto rounded-2xl p-6 text-center anim-stamp"
             style={{background:'rgba(255,255,255,.06)',border:'1.5px solid rgba(184,135,12,.35)'}}>
-            <div className="text-5xl mb-2">{r.sym}</div>
+            <div className="flex justify-center mb-2 text-[#DEB84A]">
+              <ZodiacIcon sign={r.name} className="w-14 h-14" />
+            </div>
             <div className="f-yatra text-[#FAF4E6] text-2xl">{r.name}</div>
             <div className="f-tamil text-[#DEB84A] text-sm mb-4">{r.tamil}</div>
             <div className="grid grid-cols-2 gap-3 mb-4 text-sm">
@@ -669,11 +951,22 @@ function Jathagam() {
 
 function Works() {
   const steps = [
-    {ic:'📞',t:'Contact Us',        tam:'தொடர்பு கொள்ளுங்கள்',       d:`Call or WhatsApp ${B.owner} at ${B.waDisp}. Visit our Tuticorin offices in Murappanadu or Vallanadu anytime.`},
-    {ic:'📝',t:'Register Profile',  tam:'பதிவு செய்யுங்கள்',          d:'Share your details, horoscope, family background and preferences. Our team creates your profile personally — no agents involved.'},
-    {ic:'🪐',t:'Jathagam Matching', tam:'ஜாதக பொருத்தம்',            d:'Our experienced team conducts a complete 10-porutham horoscope analysis to ensure genuine compatibility before any introduction.'},
-    {ic:'💍',t:'Meet & Marry',      tam:'சந்தித்து திருமணம் செய்யுங்கள்', d:'Arrange family meetings and finalize the match. We support you throughout — from first introduction to your Tamil wedding day.'},
+    {ic:'phone', t:'Contact Us',        tam:'தொடர்பு கொள்ளுங்கள்',       d:`Call or WhatsApp ${B.owner} at ${B.waDisp}. Visit our Tuticorin offices in Murappanadu or Vallanadu anytime.`},
+    {ic:'doc',   t:'Register Profile',  tam:'பதிவு செய்யுங்கள்',          d:'Share your details, horoscope, family background and preferences. Our team creates your profile personally — no agents involved.'},
+    {ic:'horo',  t:'Jathagam Matching', tam:'ஜாதக பொருத்தம்',            d:'Our experienced team conducts a complete 10-porutham horoscope analysis to ensure genuine compatibility before any introduction.'},
+    {ic:'ring',  t:'Meet & Marry',      tam:'சந்தித்து திருமணம் செய்யுங்கள்', d:'Arrange family meetings and finalize the match. We support you throughout — from first introduction to your Tamil wedding day.'},
   ]
+
+  const renderStepIcon = (ic: string) => {
+    switch(ic) {
+      case 'phone': return <PhoneIcon className="w-5 h-5 text-[#FAF4E6]" />
+      case 'doc':   return <DocumentIcon className="w-5 h-5 text-[#FAF4E6]" />
+      case 'horo':  return <MoonStarIcon className="w-5 h-5 text-[#FAF4E6]" />
+      case 'ring':  return <RingsIcon className="w-5 h-5 text-[#FAF4E6]" />
+      default:      return null
+    }
+  }
+
   return (
     <section id="works" className="site-section surf-parchment tex-silk py-20 relative overflow-hidden">
       <Kolam className="absolute top-6 right-6 w-52 h-52 text-[#8B6914] opacity-8 anim-spin-cw pointer-events-none"/>
@@ -686,8 +979,10 @@ function Works() {
             <article key={s.t} className={`relative overflow-hidden rounded-2xl bg-[#FFF9F6]/80 border border-[#E5C8BC] p-6 sm:p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl reveal d${i+1}`}>
               <div className="absolute top-3 right-5 f-yatra text-[#74243A]/10 text-6xl leading-none select-none">{String(i+1).padStart(2,'0')}</div>
               <div className="relative flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full flex items-center justify-center text-xl flex-shrink-0 shadow-md"
-                  style={{background:'linear-gradient(135deg,#5A1B2A,#963750)'}}>{s.ic}</div>
+                <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 shadow-md"
+                  style={{background:'linear-gradient(135deg,#5A1B2A,#963750)'}}>
+                  {renderStepIcon(s.ic)}
+                </div>
                 <div className="min-w-0">
                   <h3 className="f-yatra text-[#24161A] text-2xl leading-tight mb-1">{s.t}</h3>
                   <div className="f-tamil text-[#8A651D] text-xs mb-3">{s.tam}</div>
@@ -788,13 +1083,13 @@ function Stories() {
               style={{border:i===idx?'1.5px solid rgba(139,105,20,.7)':'1.5px solid rgba(230,212,168,.8)'}}>
               <div className="flex items-center gap-3 mb-3">
                 <img src={tc.photo} alt="" className="w-11 h-11 rounded-full object-cover flex-shrink-0"
-                  style={{border:'2px solid rgba(184,135,12,.3)'}}/>
+                  style={{border:'2px solid rgba(139,105,20,.35)'}}/>
                 <div>
                   <div className="f-yatra text-[#1E0E12] text-base leading-tight">{tc.bride} & {tc.groom}</div>
-                  <div className="f-baloo text-[#8B6914] text-xs">{tc.dt}</div>
+                  <div className="f-baloo text-[#8B6914] text-xs">{tc.caste} · {tc.dt}</div>
                 </div>
               </div>
-              <p className="f-baloo text-[#7A5A60] text-xs leading-relaxed line-clamp-3">{tc.txt}</p>
+              <p className="f-baloo text-[#7A5A60] text-xs leading-relaxed line-clamp-3">"{tc.txt}"</p>
             </div>
           ))}
         </div>
@@ -810,6 +1105,12 @@ function Contact() {
   const [f, setF] = useState({name:'',phone:'',caste:'',rasi:'',note:''})
   const [ok, setOk] = useState(false)
 
+  const contactRows = [
+    { ic: <PhoneIcon className="w-5 h-5 text-[#DEB84A] flex-shrink-0" />, l: 'Phone', v: B.phone },
+    { ic: <GlobeIcon className="w-5 h-5 text-[#DEB84A] flex-shrink-0" />, l: 'Website', v: B.site },
+    { ic: <GstIcon className="w-5 h-5 text-[#DEB84A] flex-shrink-0" />, l: 'GSTIN', v: B.gstin }
+  ]
+
   return (
     <section id="contact" className="site-section surf-parchment tex-silk py-20 relative overflow-hidden">
       <Kolam className="absolute bottom-0 left-0 w-72 h-72 text-[#8B6914] opacity-10 pointer-events-none"/>
@@ -823,12 +1124,14 @@ function Contact() {
             {/* Main info card */}
             <div className="rounded-3xl overflow-hidden shadow-2xl"
               style={{background:'linear-gradient(150deg,#1E0E12 0%,#3A1E26 50%,#0D4A48 100%)',border:'1.5px solid rgba(184,135,12,.3)'}}>
-              {/* Card header strip */}
-              <div className="px-6 pt-6 pb-4 relative">
+              {/* Card header strip with Logo */}
+              <div className="px-6 pt-6 pb-4 relative flex items-center justify-between">
                 <Kolam className="absolute top-3 right-3 w-20 h-20 text-[#B8870C] opacity-14 pointer-events-none"/>
-                <div className="f-script text-[#FAF4E6] text-4xl sm:text-5xl leading-none"
-                  style={{textShadow:'0 2px 16px rgba(0,0,0,.4)'}}>{B.name}</div>
-                <div className="f-tamil text-[#FAF4E6]/30 text-[11px] mt-0.5">சுபவிவாஹம் — Tamil Matrimony</div>
+                <BrandLogo size="sm" />
+                <div className="text-right">
+                  <div className="f-baloo text-[#DEB84A] text-xs font-bold uppercase tracking-wider">ISO 9001:2015</div>
+                  <div className="f-baloo text-[#FAF4E6]/45 text-[10px]">Certified Service</div>
+                </div>
               </div>
 
               <div className="px-6 pb-6 space-y-3">
@@ -849,10 +1152,10 @@ function Contact() {
                 </a>
 
                 {/* Other contacts */}
-                {[{ic:'📞',l:'Phone',v:B.phone},{ic:'🌐',l:'Website',v:B.site},{ic:'🏛️',l:'GSTIN',v:B.gstin}].map(row=>(
+                {contactRows.map(row=>(
                   <div key={row.l} className="flex items-center gap-3 rounded-xl px-4 py-2.5"
                     style={{background:'rgba(255,255,255,.05)'}}>
-                    <span className="text-xl flex-shrink-0">{row.ic}</span>
+                    {row.ic}
                     <div>
                       <div className="f-baloo text-[#FAF4E6]/38 text-[10px] uppercase tracking-wider">{row.l}</div>
                       <div className="f-baloo text-[#FAF4E6] text-sm font-semibold">{row.v}</div>
@@ -866,7 +1169,7 @@ function Contact() {
             {B.addrs.map((a,i)=>(
               <div key={i} className="flex items-start gap-3 bg-white rounded-2xl p-4 shadow-sm"
                 style={{border:'1.5px solid rgba(230,212,168,.9)'}}>
-                <span className="text-[#8B6914] text-2xl flex-shrink-0 mt-0.5">📍</span>
+                <MapPinIcon className="w-6 h-6 text-[#8B6914] flex-shrink-0 mt-0.5" />
                 <div>
                   <div className="f-baloo text-[#7A5A60] text-[10px] font-bold uppercase tracking-wider mb-1">{a.lbl}</div>
                   <p className="f-baloo text-[#1E0E12] text-sm leading-relaxed">{a.line}</p>
@@ -892,7 +1195,9 @@ function Contact() {
             {ok ? (
               <div className="rounded-3xl p-10 text-center shadow-2xl"
                 style={{background:'linear-gradient(135deg,#0D4A48,#1A6663)',border:'1.5px solid rgba(184,135,12,.3)'}}>
-                <div className="text-7xl mb-4 anim-float">🎊</div>
+                <div className="w-20 h-20 mx-auto mb-4 rounded-full bg-[#DEB84A]/20 border border-[#DEB84A]/60 flex items-center justify-center text-[#DEB84A] anim-float">
+                  <RingsIcon className="w-10 h-10" />
+                </div>
                 <div className="f-tamil text-[#DEB84A] text-xl mb-1">நன்றி!</div>
                 <div className="f-yatra text-[#FAF4E6] text-3xl mb-3">Thank You!</div>
                 <p className="f-baloo text-[#FAF4E6]/65 text-sm mb-7">
@@ -915,7 +1220,7 @@ function Contact() {
                   {(['bride','groom'] as const).map(g=>(
                     <button key={g} type="button" onClick={()=>setGen(g)}
                       className={`flex-1 py-2.5 rounded-lg f-baloo font-bold text-sm transition-all ${gen===g?'bg-[#5C1220] text-[#FAF4E6] shadow-md':'text-[#7A5A60] hover:text-[#5C1220]'}`}>
-                      {g==='bride'?'🌸 I am a Bride':'🤵 I am a Groom'}
+                      {g==='bride' ? 'I am a Bride' : 'I am a Groom'}
                     </button>
                   ))}
                 </div>
@@ -977,8 +1282,7 @@ function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
           {/* Brand */}
           <div>
-            <div className="f-script text-[#B8870C] text-4xl leading-none mb-0.5">{B.name}</div>
-            <div className="f-tamil text-[#FAF4E6]/22 text-[11px] mb-4">சுபவிவாஹம்</div>
+            <BrandLogo size="lg" className="mb-5" />
             <p className="f-baloo text-[#FAF4E6]/40 text-sm leading-relaxed mb-4">
               Tuticorin's most trusted Tamil matrimony. Personally managed by {B.owner}. ISO 9001:2015 certified.
             </p>
@@ -1021,7 +1325,9 @@ function Footer() {
 
         <div className="border-t border-white/6 pt-6 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="f-baloo text-[#FAF4E6]/22 text-xs">© 2025 Subhavivaham · GSTIN: {B.gstin}</p>
-          <p className="f-baloo text-[#FAF4E6]/22 text-xs">Made with ♥ in Tuticorin, Tamil Nadu</p>
+          <p className="f-baloo text-[#FAF4E6]/22 text-xs flex items-center gap-1.5">
+            Made with <HeartIcon className="w-3.5 h-3.5 text-[#DEB84A] fill-current inline"/> in Tuticorin, Tamil Nadu
+          </p>
         </div>
       </div>
     </footer>

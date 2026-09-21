@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+Tamil:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&family=Noto+Serif+Tamil:wght@400;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
 @import '@fontsource/noto-serif-tamil/tamil-400.css';
 @import '@fontsource/noto-serif-tamil/tamil-600.css';
 @import '@fontsource/noto-serif-tamil/tamil-700.css';
@@ -59,10 +59,12 @@
 ::-webkit-scrollbar-thumb { background: var(--brass); border-radius: 99px; }
 
 /* ── Font helpers ───────────────────────────────────────────────── */
-.f-yatra  { font-family: 'DM Serif Display', Georgia, serif; letter-spacing: -.025em; }
-.f-baloo  { font-family: 'Manrope', system-ui, sans-serif; }
-.f-script { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; letter-spacing: -.035em; }
-.f-tamil  { font-family: 'Noto Serif Tamil', 'DejaVu Sans', serif; }
+.f-yatra    { font-family: 'DM Serif Display', Georgia, serif; letter-spacing: -.025em; }
+.f-baloo    { font-family: 'Manrope', system-ui, sans-serif; }
+.f-script   { font-family: 'DM Serif Display', Georgia, serif; font-style: italic; letter-spacing: -.035em; }
+.f-tamil    { font-family: 'Noto Serif Tamil', 'DejaVu Sans', serif; }
+.f-brush    { font-family: 'Alex Brush', cursive; }
+.f-playfair { font-family: 'Playfair Display', Georgia, serif; }
 
 /* ── Gradient text ──────────────────────────────────────────────── */
 .text-brass {
