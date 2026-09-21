@@ -422,7 +422,7 @@ function BrandLogo({ size = 'md', className = '' }: { size?: 'sm' | 'md' | 'lg';
   const isLg = size === 'lg'
 
   return (
-    <div className={`flex items-center gap-3 sm:gap-4 select-none ${className}`}>
+    <div className={`flex items-center gap-2.5 sm:gap-3.5 select-none ${className}`}>
       {/* Sacred Knot Emblem with soft warm aura */}
       <div className="relative flex-shrink-0">
         <div className="absolute inset-0 bg-[#DEB84A]/15 blur-lg rounded-full transform scale-90 pointer-events-none" />
@@ -430,7 +430,7 @@ function BrandLogo({ size = 'md', className = '' }: { size?: 'sm' | 'md' | 'lg';
           src={KNOT_LOGO_SRC}
           alt="Subhavivaham Sacred Knot"
           className={`relative w-auto object-contain drop-shadow-[0_4px_14px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105 ${
-            isSm ? 'h-10 sm:h-11' : isLg ? 'h-14 sm:h-18' : 'h-11 sm:h-13 md:h-15'
+            isSm ? 'h-9 sm:h-10' : isLg ? 'h-12 sm:h-14' : 'h-10 sm:h-12 md:h-13'
           }`}
         />
       </div>
@@ -440,14 +440,14 @@ function BrandLogo({ size = 'md', className = '' }: { size?: 'sm' | 'md' | 'lg';
         <div className="flex items-baseline drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)]">
           <span
             className={`f-brush font-bold bg-gradient-to-r from-[#FFF5D6] via-[#E5B842] to-[#B8870C] bg-clip-text text-transparent ${
-              isSm ? 'text-2xl sm:text-3xl' : isLg ? 'text-3xl sm:text-4xl md:text-5xl' : 'text-3xl sm:text-4xl md:text-[2.65rem]'
+              isSm ? 'text-2xl' : isLg ? 'text-3xl sm:text-[2.25rem]' : 'text-3xl sm:text-[2.2rem]'
             }`}
           >
             Subha
           </span>
           <span
             className={`f-brush font-bold bg-gradient-to-r from-[#86EFAC] via-[#10B981] to-[#047857] bg-clip-text text-transparent ml-1.5 ${
-              isSm ? 'text-2xl sm:text-3xl' : isLg ? 'text-3xl sm:text-4xl md:text-5xl' : 'text-3xl sm:text-4xl md:text-[2.65rem]'
+              isSm ? 'text-2xl' : isLg ? 'text-3xl sm:text-[2.25rem]' : 'text-3xl sm:text-[2.2rem]'
             }`}
           >
             vivaham
@@ -455,11 +455,11 @@ function BrandLogo({ size = 'md', className = '' }: { size?: 'sm' | 'md' | 'lg';
         </div>
 
         <div className="flex items-center gap-2 mt-0.5">
-          <span className="f-tamil text-[#E5B842] text-[11px] sm:text-xs font-semibold tracking-wide">
+          <span className="f-tamil text-[#E5B842] text-[10px] sm:text-[11px] font-semibold tracking-wide">
             சுபவிவாஹம்
           </span>
           <span className="w-1 h-1 rounded-full bg-[#E5B842]/60" />
-          <span className="f-baloo text-[#FAF4E6]/80 text-[9px] sm:text-[10px] uppercase font-bold tracking-[.22em]">
+          <span className="f-baloo text-[#FAF4E6]/80 text-[8px] sm:text-[9px] uppercase font-bold tracking-[.22em]">
             Tamil Matrimony
           </span>
         </div>
@@ -1284,11 +1284,11 @@ function Footer() {
       style={{background:'#0F0608',backgroundImage:'radial-gradient(ellipse at 18% 28%, rgba(92,18,32,.65) 0,transparent 50%),radial-gradient(ellipse at 82% 72%, rgba(13,74,72,.4) 0,transparent 55%)'}}>
       <Kolam className="absolute bottom-0 left-0 w-72 h-72 text-[#B8870C] opacity-5 pointer-events-none"/>
       <div className="relative max-w-7xl mx-auto px-5 sm:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-10 mb-10">
           {/* Brand */}
-          <div>
-            <BrandLogo size="lg" className="mb-5" />
-            <p className="f-baloo text-[#FAF4E6]/40 text-sm leading-relaxed mb-4">
+          <div className="lg:col-span-5">
+            <BrandLogo size="md" className="mb-5" />
+            <p className="f-baloo text-[#FAF4E6]/40 text-sm leading-relaxed mb-4 max-w-sm">
               Tuticorin's most trusted Tamil matrimony. Personally managed by {B.owner}. ISO 9001:2015 certified.
             </p>
             <div className="flex gap-2 flex-wrap">
@@ -1297,7 +1297,7 @@ function Footer() {
           </div>
 
           {/* Links */}
-          <div>
+          <div className="lg:col-span-2">
             <h4 className="f-baloo text-[#B8870C] font-bold text-xs uppercase tracking-wider mb-4">Quick Links</h4>
             <ul className="space-y-2.5 f-baloo text-sm">
               {['Browse Brides','Browse Grooms','Register Free','Jathagam Matching','Success Stories','Contact Us'].map(l=>(
@@ -1307,7 +1307,7 @@ function Footer() {
           </div>
 
           {/* Communities */}
-          <div>
+          <div className="lg:col-span-2">
             <h4 className="f-baloo text-[#B8870C] font-bold text-xs uppercase tracking-wider mb-4">Communities</h4>
             <ul className="space-y-2.5 f-baloo text-sm">
               {COMMUNITIES.slice(0,6).map(c=><li key={c}><a href="#" className="text-[#FAF4E6]/40 hover:text-[#DEB84A] transition-colors">{c} Matrimony</a></li>)}
@@ -1315,7 +1315,7 @@ function Footer() {
           </div>
 
           {/* Contact */}
-          <div>
+          <div className="lg:col-span-3">
             <h4 className="f-baloo text-[#B8870C] font-bold text-xs uppercase tracking-wider mb-4">Contact</h4>
             <div className="space-y-3 f-baloo text-sm">
               <a href={`https://wa.me/91${B.wa}`} className="flex items-center gap-2 text-[#25D366] hover:text-[#1DA851] transition-colors">
