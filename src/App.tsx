@@ -412,6 +412,10 @@ function Head({title,sub,tamil,light=false}:HeadProps) {
 
 // ── Brand Logo Component (Clean, Sharp, No White Box) ──────────────
 
+const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH !== undefined 
+  ? process.env.NEXT_PUBLIC_BASE_PATH 
+  : (process.env.NODE_ENV === 'production' ? '/subhavivaham-tamil-matrimony' : '')
+
 function BrandLogo({ size = 'md', className = '' }: { size?: 'sm' | 'md' | 'lg'; className?: string }) {
   const isSm = size === 'sm'
   const isLg = size === 'lg'
@@ -422,7 +426,7 @@ function BrandLogo({ size = 'md', className = '' }: { size?: 'sm' | 'md' | 'lg';
       <div className="relative flex-shrink-0">
         <div className="absolute inset-0 bg-[#DEB84A]/15 blur-lg rounded-full transform scale-90 pointer-events-none" />
         <img
-          src="/knot-transparent.png"
+          src={`${BASE_PATH}/knot-transparent.png`}
           alt="Subhavivaham Sacred Knot"
           className={`relative w-auto object-contain drop-shadow-[0_4px_14px_rgba(0,0,0,0.45)] transition-transform duration-300 group-hover:scale-105 ${
             isSm ? 'h-10 sm:h-11' : isLg ? 'h-14 sm:h-18' : 'h-11 sm:h-13 md:h-15'
